@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "Test contact form submission",
+      "method": "POST",
+      "path": "/",
+      "body": "{\"name\": \"Test User\", \"phone\": \"(555) 123-4567\", \"message\": \"Test yard message\"}",
+      "expectedStatus": 200,
+      "expectedBody": {"success": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
