@@ -227,6 +227,12 @@ const Index = () => {
             <span className="text-4xl">📞</span>
             <h2 className="font-fredoka text-4xl font-bold text-lawn-dark mt-2">Get In Touch</h2>
             <p className="text-muted-foreground mt-2">Fill this out and I'll get back to you as fast as I can!</p>
+            <a
+              href="tel:5875908972"
+              className="inline-flex items-center gap-2 mt-4 bg-lawn-green text-white font-fredoka font-semibold px-6 py-3 rounded-full text-lg hover:bg-lawn-dark transition-colors shadow-md"
+            >
+              <Icon name="Phone" size={20} /> Call or Text: (587) 590-8972
+            </a>
           </div>
 
           {sent ? (
@@ -289,6 +295,7 @@ const Index = () => {
           <span className="font-fredoka text-white font-semibold text-lg">Junior's Lawn Care</span>
         </div>
         <p>Serving your neighborhood on weekends · Starting at just $10</p>
+        <a href="tel:5875908972" className="inline-block mt-2 text-lawn-yellow font-semibold hover:underline">(587) 590-8972</a>
         <p className="mt-1 text-white/40 text-xs">Made with hard work and big dreams © 2026</p>
       </footer>
     </div>
