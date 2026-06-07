@@ -78,12 +78,15 @@ const Index = () => {
             <button onClick={() => scrollTo("pricing")} className="hover:text-lawn-dark transition-colors">Pricing</button>
             <button onClick={() => scrollTo("contact")} className="hover:text-lawn-dark transition-colors">Contact</button>
           </div>
-          <button
-            onClick={() => scrollTo("contact")}
-            className="bg-lawn-green text-white font-fredoka font-semibold px-4 py-2 rounded-full text-sm hover:bg-lawn-dark transition-colors shadow-md"
-          >
-            Book Now
-          </button>
+          <div className="flex items-center gap-3">
+            <a href="tel:5878718205" className="hidden sm:block text-lawn-green font-semibold text-sm hover:text-lawn-dark transition-colors">(587) 871-8205</a>
+            <button
+              onClick={() => scrollTo("contact")}
+              className="bg-lawn-green text-white font-fredoka font-semibold px-4 py-2 rounded-full text-sm hover:bg-lawn-dark transition-colors shadow-md"
+            >
+              Book Now
+            </button>
+          </div>
         </div>
       </nav>
 
