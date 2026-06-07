@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMG = "https://cdn.ezst.app/projects/257069c3-c09f-4189-8b0c-b9b149fb797a/files/c1bbe439-9e33-4e83-bb63-494e0c41d028.jpg";
+const HERO_IMG = "https://cdn.ezst.app/projects/257069c3-c09f-4189-8b0c-b9b149fb797a/files/d1f8a14e-43e9-4ae9-a5ec-42c0d2e1b78a.jpg";
 
 const services = [
   {
