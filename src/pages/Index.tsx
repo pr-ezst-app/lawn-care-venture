@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMG = "https://cdn.ezst.app/projects/257069c3-c09f-4189-8b0c-b9b149fb797a/files/98641dfb-75fc-4379-83cf-adc2ccd16fbc.jpg";
+const HERO_IMG = "https://cdn.ezst.app/projects/257069c3-c09f-4189-8b0c-b9b149fb797a/files/c1bbe439-9e33-4e83-bb63-494e0c41d028.jpg";
 
 const services = [
   {
@@ -71,7 +71,7 @@ const Index = () => {
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-2xl animate-bounce-gentle inline-block">🌱</span>
-            <span className="font-fredoka text-xl font-semibold text-lawn-dark">Junior's Lawn Care</span>
+            <span className="font-fredoka text-xl font-semibold text-lawn-dark">Marcus's Lawn Care</span>
           </div>
           <div className="hidden sm:flex gap-6 text-sm font-semibold text-lawn-green">
             <button onClick={() => scrollTo("services")} className="hover:text-lawn-dark transition-colors">Services</button>
@@ -105,7 +105,7 @@ const Index = () => {
               <span className="text-lawn-yellow">Looking Great</span>
             </h1>
             <p className="text-white/85 text-lg mb-8 leading-relaxed animate-fade-up-slower">
-              Hi! I'm a 12-year-old in your neighborhood working hard to earn money for new equipment. I'll mow your lawn on weekends — reliably, affordably, and with a smile. 😊
+              Hi! I'm Marcus, a 12-year-old in your neighborhood working hard to earn money for new equipment. I'll mow your lawn on weekends — reliably, affordably, and with a smile. 😊
             </p>
             <div className="flex flex-wrap gap-3">
               <button
@@ -292,7 +292,7 @@ const Index = () => {
       <footer className="bg-lawn-dark text-white/70 py-8 px-6 text-center text-sm">
         <div className="flex justify-center items-center gap-2 mb-2">
           <span className="text-xl">🌱</span>
-          <span className="font-fredoka text-white font-semibold text-lg">Junior's Lawn Care</span>
+          <span className="font-fredoka text-white font-semibold text-lg">Marcus's Lawn Care</span>
         </div>
         <p>Serving your neighborhood on weekends · Starting at just $10</p>
         <a href="tel:5875908972" className="inline-block mt-2 text-lawn-yellow font-semibold hover:underline">(587) 590-8972</a>
