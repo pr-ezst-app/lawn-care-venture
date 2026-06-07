@@ -90,8 +90,8 @@ const Index = () => {
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${HERO_IMG})` }}
+          className="absolute inset-0 bg-contain bg-no-repeat bg-right-bottom"
+          style={{ backgroundImage: `url(${HERO_IMG})`, backgroundColor: '#1e3a22' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-lawn-dark/80 via-lawn-dark/50 to-transparent" />
 
