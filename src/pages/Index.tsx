@@ -295,7 +295,7 @@ const Index = () => {
           <span className="font-fredoka text-white font-semibold text-lg">Marcus's Lawn Care</span>
         </div>
         <p>Serving your neighborhood on weekends · Starting at just $10</p>
-        <a href="tel:5875908972" className="inline-block mt-2 text-lawn-yellow font-semibold hover:underline">(587) 590-8972</a>
+        <a href="tel:5878718205" className="inline-block mt-2 text-lawn-yellow font-semibold hover:underline">(587) 871-8205</a>
         <p className="mt-1 text-white/40 text-xs">Made with hard work and big dreams © 2026</p>
       </footer>
     </div>
