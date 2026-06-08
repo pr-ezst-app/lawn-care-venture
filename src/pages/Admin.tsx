@@ -12,7 +12,7 @@ interface Submission {
   created_at: string;
 }
 
-const Admin = () => {
+const Admin = ({ onClose }: { onClose?: () => void }) => {
   const [authed, setAuthed] = useState(false);
   const [pw, setPw] = useState("");
   const [error, setError] = useState(false);
@@ -89,7 +89,7 @@ const Admin = () => {
               <p className="text-muted-foreground text-sm">{submissions.length} customer request{submissions.length !== 1 ? "s" : ""}</p>
             </div>
           </div>
-          <button onClick={() => setAuthed(false)} className="text-sm text-muted-foreground hover:text-lawn-dark transition-colors flex items-center gap-1">
+          <button onClick={() => { setAuthed(false); onClose?.(); }} className="text-sm text-muted-foreground hover:text-lawn-dark transition-colors flex items-center gap-1">
             <Icon name="LogOut" size={14} /> Log out
           </button>
         </div>

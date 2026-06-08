@@ -50,9 +50,10 @@ const pricing = [
   },
 ];
 
-const Index = () => {
+const Index = ({ onAdminOpen }: { onAdminOpen?: () => void }) => {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const [sent, setSent] = useState(false);
+  const [tapCount, setTapCount] = useState(0);
 
   function scrollTo(id: string) {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -299,7 +300,14 @@ const Index = () => {
         </div>
         <p>Serving your neighborhood on weekends · Starting at just $10</p>
         <a href="tel:5878718205" className="inline-block mt-2 text-lawn-yellow font-semibold hover:underline">(587) 871-8205</a>
-        <p className="mt-1 text-white/40 text-xs">Made with hard work and big dreams © 2026</p>
+        <p
+          className="mt-1 text-white/40 text-xs cursor-default select-none"
+          onClick={() => {
+            const next = tapCount + 1;
+            setTapCount(next);
+            if (next >= 5) { setTapCount(0); onAdminOpen?.(); }
+          }}
+        >Made with hard work and big dreams © 2026</p>
       </footer>
     </div>
   );
