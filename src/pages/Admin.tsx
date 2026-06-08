@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const SUBMISSIONS_URL = "https://functions.poehali.dev/fe9f25a9-9a6c-4aec-bc1a-f263c6be8004";
-const PASSWORD = "marcus2024";
+const PASSWORD = "Swat_sloth139";
 
 interface Submission {
   id: number;
