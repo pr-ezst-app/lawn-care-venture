@@ -292,13 +292,27 @@ const Index = ({ onAdminOpen }: { onAdminOpen?: () => void }) => {
         </div>
       </section>
 
+      {/* SERVICE AREA */}
+      <section className="py-14 px-6 bg-lawn-pale">
+        <div className="max-w-2xl mx-auto text-center">
+          <span className="text-4xl mb-4 block">📍</span>
+          <h2 className="font-fredoka text-3xl font-bold text-lawn-dark mb-3">Based in Canyon Creek, Alberta</h2>
+          <p className="text-muted-foreground text-base mb-4">
+            I take on jobs right here in Canyon Creek and the surrounding area. Local, reliable, and just around the corner from you.
+          </p>
+          <div className="inline-flex items-center gap-2 bg-white border-2 border-lawn-green rounded-full px-6 py-2.5 text-lawn-dark font-fredoka font-semibold text-lg shadow-sm">
+            <span>🌿</span> Serving Canyon Creek, AB
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="bg-lawn-dark text-white/70 py-8 px-6 text-center text-sm">
         <div className="flex justify-center items-center gap-2 mb-2">
           <span className="text-xl">🌱</span>
           <span className="font-fredoka text-white font-semibold text-lg">Marcus's Lawn Care</span>
         </div>
-        <p>Serving your neighborhood on weekends · Starting at just $10</p>
+        <p>Canyon Creek, Alberta · Starting at just $25</p>
         <a href="tel:5878718205" className="inline-block mt-2 text-lawn-yellow font-semibold hover:underline">(587) 871-8205</a>
         <p
           className="mt-1 text-white/40 text-xs cursor-default select-none"
