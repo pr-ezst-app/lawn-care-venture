@@ -15,7 +15,8 @@ def handler(event: dict, context) -> dict:
     if event.get('httpMethod') == 'OPTIONS':
         return {'statusCode': 200, 'headers': cors_headers, 'body': ''}
 
-    body = json.loads(event.get('body', '{}'))
+    raw_body = event.get('body', '{}')
+    body = json.loads(raw_body) if isinstance(raw_body, str) else raw_body
     name = body.get('name', 'Unknown')
     phone = body.get('phone', 'Not provided')
     message = body.get('message', 'No message')

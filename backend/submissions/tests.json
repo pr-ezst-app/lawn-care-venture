@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Save a submission",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": "Test User", "phone": "555-1234", "message": "Test message"},
+      "expectedStatus": 200,
+      "expectedBody": {"success": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

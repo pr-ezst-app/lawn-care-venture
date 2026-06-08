@@ -58,8 +58,13 @@ const Index = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    await fetch("https://functions.poehali.dev/fe9f25a9-9a6c-4aec-bc1a-f263c6be8004", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
     setSent(true);
   }
 
