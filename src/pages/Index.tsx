@@ -29,21 +29,21 @@ const services = [
 const pricing = [
   {
     label: "Small Yard",
-    price: "$10",
+    price: "$25",
     note: "Up to 1/8 acre",
     color: "bg-lawn-pale border-lawn-light",
     badge: "Most Popular",
   },
   {
     label: "Medium Yard",
-    price: "$15",
+    price: "$35",
     note: "Up to 1/4 acre",
     color: "bg-white border-lawn-green",
     badge: "",
   },
   {
     label: "Large Yard",
-    price: "$20",
+    price: "$65",
     note: "Up to 1/2 acre",
     color: "bg-white border-lawn-green",
     badge: "",
